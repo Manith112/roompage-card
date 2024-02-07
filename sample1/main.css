@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+
+
 *{
     font-family: 'League Spartan', sans-serif;
     margin: 0;
@@ -38,28 +40,40 @@
 
 /* transition  */
 .slide{
-    animation: slideFromRight 1.5s ease-in-out forwards;
-    opacity: 0; /* Start with opacity 0 */
+  animation: fadeInAnimation 0.2s ease-in-out forwards;
 }
 .slide:not(.active) {
     display: none;
   }
 .img-slide-mobile{
-  animation: fadeInAnimation 1.5s ease-in-out forwards;
+  animation: fadeInAnimation 0.2s ease-in-out forwards;
 }
 .img-slide{
-    animation: fadeInAnimation 1.5s ease-in-out forwards;
+    animation: fadeInAnimation 0.2s ease-in-out forwards;
 }
-  @keyframes slideFromRight {
-    0% {
-      opacity: 0;
-      transform: translateX(100%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0%);
   }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+@keyframes fadeInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
   @keyframes fadeInAnimation {
     from {
       opacity: 0;
@@ -68,28 +82,14 @@
       opacity: 1;
     }
   }
-  /* .three{
-    height: 150px;
-  } */
+ 
 
   @media screen and (max-width:1260px){
     .first{
-        height: 500px;
+      height: auto;
     }
-    .img-slide{
-        height: 500px;
-    }
-  }
-  @media screen and (max-width:1100px){
-    .first{
-        height: 700px;
-    }
-    .img-slide{
-        height: 700px;
-    }
-  }
-  @media screen and (max-width:800px){
     .img-slide{
       height: auto;
     }
   }
+ 

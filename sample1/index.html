@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./room-homepage-master/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../room-homepage-master/images/favicon-32x32.png">
   
     <title>Frontend Mentor | Room homepage</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="main.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -27,15 +27,15 @@
 <body class="min-h-screen">
     <div class="flex first max-[820px]:flex-col">
         <!-- left side desktop -->
-        <div class="w-[60%] relative max-[820px]:w-[100%] max-[420px]:hidden">
+        <div class="w-[60%] relative max-[820px]:w-[100%] max-[450px]:hidden">
             <div>
-            <img src="./room-homepage-master/images/desktop-image-hero-1.jpg" alt="" class="img-slide">
-            <img src="./room-homepage-master/images/desktop-image-hero-2.jpg" alt="" class="img-slide">
-            <img src="./room-homepage-master/images/desktop-image-hero-3.jpg" alt="" class="img-slide">
+            <img src="../room-homepage-master/images/desktop-image-hero-1.jpg" alt="" class="img-slide">
+            <img src="../room-homepage-master/images/desktop-image-hero-2.jpg" alt="" class="img-slide">
+            <img src="../room-homepage-master/images/desktop-image-hero-3.jpg" alt="" class="img-slide">
         </div>
             <div class="flex gap-[50px] absolute top-[60px] left-[60px]">
                 <div class="pt-[4px]">
-                <img src="./room-homepage-master/images/logo.svg" alt="">
+                <img src="../room-homepage-master/images/logo.svg" alt="">
              </div>
                <ul class="list-none flex gap-[30px] dot-hover" >
                     <li>home</li>
@@ -46,22 +46,22 @@
             </div>
         </div>
         <!-- mobile img  -->
-        <div class="hidden w-[100%] relative max-[420px]:flex">
+        <div class="hidden w-auto relative max-[450px]:flex">
             
-                <img src="./room-homepage-master/images/mobile-image-hero-1.jpg" alt="" class="img-slide-mobile">
-                <img src="./room-homepage-master/images/mobile-image-hero-2.jpg" alt="" class="img-slide-mobile">
-                <img src="./room-homepage-master/images/mobile-image-hero-3.jpg" alt="" class="img-slide-mobile">
+                <img src="../room-homepage-master/images/desktop-image-hero-1.jpg" alt="" class="img-slide-mobile">
+                <img src="../room-homepage-master/images/desktop-image-hero-2.jpg" alt="" class="img-slide-mobile">
+                <img src="../room-homepage-master/images/desktop-image-hero-3.jpg" alt="" class="img-slide-mobile">
          <div class="flex hidden absolute bottom-[0px] max-[450px]:right-[0px] max-[450px]:bottom-[0px] max-[450px]:flex">
                     <div class="bg-Black py-[20px] px-[27px] cursor-pointer hover:opacity-[0.7]" id="prevBtnMobile">
-                        <img src="./room-homepage-master/images/icon-angle-left.svg" alt="">
+                        <img src="../room-homepage-master/images/icon-angle-left.svg" alt="">
                     </div>
                     <div class="bg-Black py-[20px] px-[27px] cursor-pointer hover:opacity-[0.7]" id="nextBtnMobile">
-                        <img src="./room-homepage-master/images/icon-angle-right.svg" alt="">
+                        <img src="../room-homepage-master/images/icon-angle-right.svg" alt="">
                     </div>
                 </div>
-                <div class="absolute  top-[20px] p-[20px] hidden max-[420px]:flex ">
-                    <img src="./room-homepage-master/images/icon-hamburger.svg" alt="" id="burger" class="cursor-pointer">
-                    <img src="./room-homepage-master/images/logo.svg" alt="" class="absolute left-[150px] ">
+                <div class="absolute  top-[20px] p-[20px] hidden max-[450px]:flex ">
+                    <img src="../room-homepage-master/images/icon-hamburger.svg" alt="" id="burger" class="cursor-pointer">
+                    <img src="../room-homepage-master/images/logo.svg" alt="" class="absolute left-[150px] ">
                     <div></div>
                 </div>
 
@@ -69,7 +69,7 @@
                 <div class="bg-bgColor w-[100%] h-[100%] fixed hidden overflow-x-hidden" id="menu">
                <div  class="absolute top-[0px] right-[0px] left-[0px] flex gap-[50px] py-[40px] px-[25px] bg-White">
                 <div>
-                <img src="./room-homepage-master/images/icon-close.svg" alt="" id="close" class="cursor-pointer">
+                <img src="../room-homepage-master/images/icon-close.svg" alt="" id="close" class="cursor-pointer">
             </div>
                 <ul class="list-none flex gap-[20px]  text-DarkGray"  >
                     <li>home</li>
@@ -85,7 +85,7 @@
         <div class=" w-[40%] relative max-[820px]:w-[100%]">
             <!-- <div id="carousel-inner" class="flex"> -->
             <!-- first slide  -->
-            <div class="justiy-center flex flex-col min-h-auto py-[100px] px-[40px] slide">
+            <div class="justify-center flex flex-col min-h-auto py-[100px] px-[40px] slide">
                 <h1 class="text-[40px] font-[600] leading-10">Discover innovative ways to decorate</h1>
                 <p class="text-DarkGray py-[30px] font-[400]"> We provide unmatched quality, comfort, and style for property owners across the country. 
                     Our experts combine form and function in bringing your vision to life. Create a room in your 
@@ -95,12 +95,12 @@
                     <span class="tracking-[10px] font-[600]">Shop Now</span>
                 </div>
                     <div class="inline-block ml-[20px]">
-                    <img src="./room-homepage-master/images/icon-arrow.svg" alt="">
+                    <img src="../room-homepage-master/images/icon-arrow.svg" alt="">
                 </div>
                 </div>
             </div> 
             <!-- second slide  -->
-            <div class="justiy-center flex flex-col min-h-auto py-[100px] px-[40px] slide">
+            <div class="justify-center flex flex-col min-h-auto py-[100px] px-[40px] slide">
                 <h1 class="text-[40px] font-[600] leading-10">We are available all across the globe</h1>
                 <p class="text-DarkGray py-[30px] font-[400]">With stores all over the world, it's easy for you to find furniture for your home or place of business. 
                     Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
@@ -110,12 +110,12 @@
                     <span class="tracking-[10px] font-[600]">Shop Now</span>
                 </div>
                     <div class="inline-block ml-[20px]">
-                    <img src="./room-homepage-master/images/icon-arrow.svg" alt="">
+                    <img src="../room-homepage-master/images/icon-arrow.svg" alt="">
                 </div>
                 </div>
             </div> 
             <!-- third slide  -->
-            <div class="justiy-center flex flex-col min-h-auto py-[100px] px-[40px] slide">
+            <div class="justify-center flex flex-col min-h-auto py-[100px] px-[40px] slide">
                 <h1 class="text-[40px] font-[600] leading-10"> About our furniture</h1>
                 <p class="text-DarkGray py-[30px] font-[400]"> Our multifunctional collection blends design and function to suit your individual taste.
                     Make each room unique, or pick a cohesive theme that best express your interests and what
@@ -126,7 +126,7 @@
                     <span class="tracking-[10px] font-[600]">Shop Now</span>
                 </div>
                     <div class="inline-block ml-[20px]">
-                    <img src="./room-homepage-master/images/icon-arrow.svg" alt="">
+                    <img src="../room-homepage-master/images/icon-arrow.svg" alt="">
                 </div>
                 </div>
             </div> 
@@ -134,20 +134,20 @@
 
             <div class="flex absolute bottom-[0px] max-[450px]:hidden">
                 <div class="bg-Black py-[20px] px-[27px] cursor-pointer hover:opacity-[0.7]" id="prevBtn">
-                    <img src="./room-homepage-master/images/icon-angle-left.svg" alt="">
+                    <img src="../room-homepage-master/images/icon-angle-left.svg" alt="">
                 </div>
                 <div class="bg-Black py-[20px] px-[27px] cursor-pointer hover:opacity-[0.7]" id="nextBtn">
-                    <img src="./room-homepage-master/images/icon-angle-right.svg" alt="">
+                    <img src="../room-homepage-master/images/icon-angle-right.svg" alt="">
                 </div>
             </div>
         </div>
     </div>
 
     <!-- second row  -->
-    <div class="flex max-[820px]:flex-col max-[820px]:mt-[400px] max-[500px]:mt-[200px] max-[430px]:mt-[100px] max-[420px]:mt-[200px]">
+    <div class="flex max-[820px]:flex-col max-[820px]:mt-[0px] ">
         <!-- left  -->
-        <div class="w-[30%] max-[820px]:w-[100%] max-[820px]:text-center ">
-            <img src="./room-homepage-master/images/image-about-dark.jpg" alt="">
+        <div class="w-[30%] max-[820px]:w-[100%]">
+            <img src="../room-homepage-master/images/image-about-dark.jpg" alt="" class="max-[820px]:w-[100%]">
         </div>
         <!-- middle  -->
         <div class="w-[40%] m-auto px-[30px] max-[1100px]:px-[10px] max-[820px]:w-[100%] max-[820px]:py-[40px] max-[820px]:px-[30px]">
@@ -159,9 +159,9 @@
         </div>
         <!-- right  -->
         <div class="w-[30%] max-[820px]:w-[100%]">
-            <img src="./room-homepage-master/images/image-about-light.jpg" alt="">
+            <img src="../room-homepage-master/images/image-about-light.jpg" alt="" class="max-[820px]:w-[100%]">
         </div>
     </div>
-    <script src="index.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

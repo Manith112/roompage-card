@@ -12,10 +12,16 @@ document.addEventListener("DOMContentLoaded", function() {
 burger.addEventListener("click", function(){
   menu.style.display = "flex";
   burger.style.display = "none"
+  menu.style.animation = "fadeInFromRight 2s ease forwards";
 })
 close.addEventListener("click", function(){
-  menu.style.display = "";
+  
   burger.style.display = ""
+  menu.style.animation = "fadeOut 2s ease forwards"
+  setTimeout(function() {
+    menu.style.display = "";
+    menu.style.animation = "";
+  }, 800)
 })
 
 
